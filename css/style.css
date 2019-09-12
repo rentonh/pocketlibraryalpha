@@ -93,6 +93,11 @@
   top: 750px;
 }
 
+.floorLevel-homeImg {
+  display: none;
+  border-radius: 10px;
+}
+
 .mySlides {
   display:none;
   border-radius: 10px;

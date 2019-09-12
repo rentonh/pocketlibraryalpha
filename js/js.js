@@ -44,6 +44,17 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+  var homeImg = document.getElementById("HomeImg");
+  homeImg.style.display = "none";
 }
 
-// Change floor level
+// Show Home Image
+function showHome() {
+  var homeImg = document.getElementById("HomeImg");
+  homeImg.style.display = "block";
+  var i;
+  var x = document.getElementsByClassName("mainframe-mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
