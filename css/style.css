@@ -1,5 +1,4 @@
 /*Main frame*/
-
 .mainframe{
   width: 600px;
   height: 800px;
@@ -7,6 +6,7 @@
   background-color: lightyellow;
   border: 2px solid darkblue;
   border-radius: 10px;
+  /*background-image: url('../images/homeimg.png');*/
 }
 
 /* Ham burger Menu */
@@ -15,10 +15,10 @@
   height: 40px;
   padding: 6px;
   display: block;
-  position: relative;
-  /*margin-top: 35px;*/
+  position: absolute;
+  top: 10px;
   z-index: 100;
-  background: #2980b9;
+  background: darkblue;
   border: 5px solid white;
   box-sizing: content-box;
   border-radius: 50%;
@@ -69,50 +69,31 @@
   -webkit-transform: translateY(6px) rotate(-45deg);
           transform: translateY(6px) rotate(-45deg);
 }
-.ham-menu {
-  position: absolute;
-  top: 42px;
-  left: 48px;
-  margin: auto;
-  max-width: 570px;
-  overflow: hidden;
-}
-.ham-menu ul {
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%);
-  background-color: #3896d3;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.ham-menu.on ul {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-.ham-menu ul {
-  font-size: 0;
-}
-.ham-menu ul li {
-  display: inline-block;
-}
-.ham-menu ul li:first-child .ham-menu ul li a {
-  padding-left: 30px;
-}
-.ham-menu ul li a {
-  padding: 15px;
-  display: block;
-  background-color: transparent;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  font-size: 13px;
-}
-.ham-menu ul li.active a, .ham-menu ul li a:hover {
-  background-color: #2980b9;
-  color: #fff !important;
-}
+
+/* Menu */
+
 /* Notification */
 
 /* Floor Navigator */
 
 /* Perspective Arrow */
+.arrow {
+  position: absolute;
+  top: 650px;
+}
+
+.leftArrow {
+
+}
+.rightArrow {
+
+}
+.floorLevel {
+  position: absolute;
+  top: 750px;
+}
+
+.mySlides {
+  display:none;
+  border-radius: 10px;
+}

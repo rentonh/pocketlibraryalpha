@@ -9,15 +9,45 @@
 
   <body>
     <div class="mainframe">
-      <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button"><span class="hamburger-menu-button-open">Menu</span></button>
-      <nav id="ham-navigation" class="ham-menu">
-        <ul class="menu">
+
+      <!--Left arrow-->
+      <!--div class="w3-content w3-display-container"-->
+      <img class="mainframe-mySlides" src="images/homeimg.png" style="width:100%">
+      <img class="mainframe-mySlides" src="images/homeimg2.png" style="width:100%">
+      <!--hamburger menu-->
+      <button id="hamburger-menu" class="hamburger-menu-button">
+        <span class="hamburger-menu-button-open"></span>
+      </button>
+      <!--nav id="HBGMenu" class="ham-menu">
+        <ul class="Menu">
           <li><a href="#">Home</a></li>
-          <!--li class="active"><a href="#">About</a></li-->
           <li><a href="#">Study room</a></li>
           <li><a href="#">Bookshelf</a></li>
         </ul>
-      </nav>
+      </nav-->
+      <!--hamburger menu end-->
+      <div class="arrow">
+      <button class="arrow-leftArrow" onclick="plusDivs(-1)"><img src="images/larrow.png"></button>
+      <button class="arrow-rightArrow" onclick="plusDivs(1)"><img src="images/rarrow.png"></button>
+      </div>
+      <!--Select level-->
+
+      <div class="floorLevel">
+      <button class="arrow-leftArrow" onclick="plusDivs(-1)"><img src="images/navLH.png"></button>
+      <button class="arrow-rightarrow" onclick="plusDivs(1)"><img src="images/navL1.png"></button>
+      <button class="arrow-leftArrow" onclick="plusDivs(-1)"><img src="images/navL2.png"></button>
+      <button class="arrow-rightarrow" onclick="plusDivs(1)"><img src="images/navL3.png"></button>
+      </div>
+
+      <!--/div-->
+      <!--div class="mainframe-leftarrow">
+        <img src="images/larrow.png">
+      </div-->
+      <!--BG image-->
+      <!--div class="homeimage" src="images/homeimg.png">
+      </div-->
+
     </div>
+    <script src="js/js.js"></script>
   </body>
 </html>
