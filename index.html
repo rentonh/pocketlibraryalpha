@@ -12,9 +12,13 @@
 
       <!--Left arrow-->
       <!--div class="w3-content w3-display-container"-->
-      <img id="HomeImg" class="floorLevel-homeImg" src="images/homeimg.png" style="width:100%">
-      <!--img class="mainframe-mySlides" src="images/homeimg.png" style="width:100%"-->
-      <img class="mainframe-mySlides" src="images/homeimg2.png" style="width:100%">
+      <img id="HomeImg" class="floorLevel-homeImg" src="images/homeimg.png">
+      <img id="floor1Img" class="mainframe-mySlides" src="images/LibFloor1L.png">
+      <img class="mainframe-mySlides" src="images/LibFloor1R.png">
+      <img id="floor2Img" class="mainframe-mySlides" src="images/LibFloor2L.png">
+      <img class="mainframe-mySlides" src="images/LibFloor2R.png">
+      <img id="floor3Img" class="mainframe-mySlides" src="images/LibFloor3L.png">
+      <img class="mainframe-mySlides" src="images/LibFloor3R.png">
       <!--hamburger menu-->
       <button id="hamburger-menu" class="hamburger-menu-button">
         <span class="hamburger-menu-button-open"></span>
@@ -28,26 +32,23 @@
       </nav-->
       <!--hamburger menu end-->
       <div class="arrow">
-      <button class="arrow-leftArrow" onclick="plusDivs(-1)"><img src="images/larrow.png"></button>
-      <button class="arrow-rightArrow" onclick="plusDivs(1)"><img src="images/rarrow.png"></button>
+      <button id="hideArwL" class="arrow-leftArrow" onclick="plusDivs(-1); hideLeftArrow()"><img src="images/larrow.png"></button>
+      <button id="hideArwR" class="arrow-rightArrow" onclick="plusDivs(1); hideRightArrow()"><img src="images/rarrow.png"></button>
       </div>
       <!--Select level-->
 
       <div class="floorLevel">
       <button class="floorLevel-homeBtn" onclick="showHome()"><img src="images/navLH.png"></button>
-      <button class="arrow-rightarrow" onclick="plusDivs(1)"><img src="images/navL1.png"></button>
-      <button class="arrow-leftArrow" onclick="plusDivs(-1)"><img src="images/navL2.png"></button>
-      <button class="arrow-rightarrow" onclick="plusDivs(1)"><img src="images/navL3.png"></button>
+      <button class="floorLevel-" onclick="showFloor1()"><img src="images/navL1.png"></button>
+      <button class="floorLevel-" onclick="showFloor2()"><img src="images/navL2.png"></button>
+      <button class="floorLevel-" onclick="showFloor3()"><img src="images/navL3.png"></button>
+      <button class="" onclick="plusDivs(-1)"><img src="images/larrowb.png"></button>
+      <label>Go through all floors</label>
+      <button class="" onclick="plusDivs(1)"><img src="images/rarrowb.png"></button>
       </div>
+      <div class="browseAllFloors">
 
-      <!--/div-->
-      <!--div class="mainframe-leftarrow">
-        <img src="images/larrow.png">
-      </div-->
-      <!--BG image-->
-      <!--div class="homeimage" src="images/homeimg.png">
-      </div-->
-
+      </div>
     </div>
     <script src="js/js.js"></script>
   </body>

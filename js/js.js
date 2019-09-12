@@ -27,7 +27,23 @@ function openMenu() {
   }
 }
 
-// left and right arrow slide
+// Show Home Image
+
+function showHome() {
+  var homeImg = document.getElementById("HomeImg");
+  homeImg.style.display = "block";
+  var i;
+  var x = document.getElementsByClassName("mainframe-mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var hideArwR = document.getElementById("hideArwR")
+  hideArwR.style.display = "none";
+  var hideArwL = document.getElementById("hideArwL")
+  hideArwL.style.display = "none";
+}
+
+// Go through all floors
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -48,13 +64,38 @@ function showDivs(n) {
   homeImg.style.display = "none";
 }
 
-// Show Home Image
-function showHome() {
-  var homeImg = document.getElementById("HomeImg");
-  homeImg.style.display = "block";
-  var i;
-  var x = document.getElementsByClassName("mainframe-mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
+// Highlight current floor
+
+
+// Show level1
+function showFloor1() {
+  hideLeftArrow();
+  showDivs(slideIndex = 7);
 }
+// Show level2
+function showFloor2() {
+  hideLeftArrow();
+  showDivs(slideIndex = 3);
+}
+// Show level3
+function showFloor3() {
+  hideLeftArrow();
+  showDivs(slideIndex = 5);
+}
+
+// Hide Arrow
+function hideRightArrow() {
+  var hideArwR = document.getElementById("hideArwR")
+  hideArwR.style.display = "none";
+  var hideArwL = document.getElementById("hideArwL")
+  hideArwL.style.display = "block";
+}
+// Hide Arrow, also sets to default
+function hideLeftArrow() {
+  var hideArwR = document.getElementById("hideArwR")
+  hideArwR.style.display = "block";
+  var hideArwL = document.getElementById("hideArwL")
+  hideArwL.style.display = "none";
+}
+// Set main image to home page
+showHome();

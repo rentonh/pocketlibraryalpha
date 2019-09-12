@@ -82,11 +82,11 @@
   top: 650px;
 }
 
-.leftArrow {
-
+.arrow-leftArrow {
+ display: none;
 }
-.rightArrow {
-
+.arrow-rightArrow {
+ display: none;
 }
 .floorLevel {
   position: absolute;
@@ -94,11 +94,20 @@
 }
 
 .floorLevel-homeImg {
-  display: none;
+  display: block;
   border-radius: 10px;
 }
 
+
+
 .mySlides {
   display:none;
+}
+.mainframe-mySlides {
   border-radius: 10px;
+}
+
+.browseAllFloors {
+  position: absolute;
+  top: 750px;
 }
