@@ -105,11 +105,6 @@
   border-radius: 10px;
 }
 
-.browseAllFloors {
-  position: absolute;
-  top: 750px;
-}
-
 /* Pop up test */
 .popup_overlay {
   position: fixed;

@@ -10,8 +10,7 @@
   <body>
     <div class="mainframe">
 
-      <!--Left arrow-->
-      <!--div class="w3-content w3-display-container"-->
+      <!--Main area where stores floor plans and home image-->
       <img id="HomeImg" class="floorLevel-homeImg" src="images/homeimg.png">
       <img id="floor1Img" class="mainframe-mySlides" src="images/LibFloor1L.png">
       <img class="mainframe-mySlides" src="images/LibFloor1R.png">
@@ -31,7 +30,7 @@
           <li><a href="#">Bookshelf</a></li>
         </ul>
       </nav-->
-      <!--hamburger menu end-->
+
       <div class="arrow">
       <button id="hideArwL" class="arrow-leftArrow" onclick="plusDivs(-1); hideLeftArrow()"><img src="images/larrow.png"></button>
       <button id="hideArwR" class="arrow-rightArrow" onclick="plusDivs(1); hideRightArrow()"><img src="images/rarrow.png"></button>
@@ -39,40 +38,64 @@
       <!--Select level-->
 
       <div class="floorLevel">
-      <button class="floorLevel-homeBtn" onclick="showHome()"><img src="images/navLH.png"></button>
-      <button class="floorLevel-" onclick="showFloor1()"><img src="images/navL1.png"></button>
-      <button class="floorLevel-" onclick="showFloor2()"><img src="images/navL2.png"></button>
-      <button class="floorLevel-" onclick="showFloor3()"><img src="images/navL3.png"></button>
-      <button class="" onclick="plusDivs(-1)"><img src="images/larrowb.png"></button>
-      <label>Go through all floors</label>
-      <button class="" onclick="plusDivs(1)"><img src="images/rarrowb.png"></button>
-      </div>
-      <div class="browseAllFloors">
-
+        <button class="floorLevel-homeBtn" onclick="showHome()"><img src="images/navLH.png"></button>
+        <button class="floorLevel-" onclick="showFloor1()"><img src="images/navL1.png"></button>
+        <button class="floorLevel-" onclick="showFloor2()"><img src="images/navL2.png"></button>
+        <button class="floorLevel-" onclick="showFloor3()"><img src="images/navL3.png"></button>
+        <button class="" onclick="plusDivs(-1)"><img src="images/larrowb.png"></button>
+        <label>Go through all floors</label>
+        <button class="" onclick="plusDivs(1)"><img src="images/rarrowb.png"></button>
       </div>
     </div>
 
     <!--Pop up mapping-->
-    <map class="" name="floor3West">
-      <area class="popupbutton" shape="poly" coords="352,485,423,450,448,464,391,507" href="#floor3StudyRoom">
-    </map>
-    <map class="" name="floor3North">
-      <area class="popupbutton" shape="poly" coords="373,351,389,343,456,370,434,386" href="#floor3StudyRoom">
-    </map>
     <map class="" name="floor2West">
-      <area class="popupbutton" shape="poly" coords="305,386,342,368,359,376,322,394" href="#floor3StudyRoom">
+      <area class="popupbutton" shape="poly" coords="305,386,342,368,359,376,322,394" href="#StudyRoom">
+      <area class="popupbutton" shape="poly" coords="134,510,306,427,374,464,199,562" href="#floor2Bookshelf">
     </map>
     <map class="" name="floor2North">
-      <area class="popupbutton" shape="poly" coords="202,432,222,423,255,442,238,453" href="#floor3StudyRoom">
+      <area class="popupbutton" shape="poly" coords="202,432,222,423,255,442,238,453" href="#StudyRoom">
+      <area class="popupbutton" shape="poly" coords="309,449,370,416,521,490,470,539" href="#floor2Bookshelf">
+    </map>
+    <map class="" name="floor3West">
+      <area class="popupbutton" shape="poly" coords="352,485,423,450,448,464,391,507" href="#StudyRoom">
+      <area class="popupbutton" shape="poly" coords="100,475,261,399,361,454,332,474,284,446,151,522" href="#floor3Bookshelf">
+    </map>
+    <map class="" name="floor3North">
+      <area class="popupbutton" shape="poly" coords="373,351,389,343,456,370,434,386" href="#StudyRoom">
+      <area class="popupbutton" shape="poly" coords="278,436,385,378,410,400,377,419,525,493,469,544" href="#floor3Bookshelf">
     </map>
 
+
     <!--Pop up study room-->
-    <div id="floor3StudyRoom" class="popup_overlay">
+    <div id="StudyRoom" class="popup_overlay">
       <div class="popup_main">
         <h2>Study Room on third floor</h2>
         <a class="popup_close" href="#">&times;</a>
         <div class="popup_content">
           <a href="https://libcal.cdu.edu.au/spaces" target="_blank">Room vacancy for today</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Pop up floor 2 Bookshelf-->
+    <div id="floor2Bookshelf" class="popup_overlay">
+      <div class="popup_main">
+        <h2>Bookshelves on second floor</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>This floor contains books with categories of IT, art and politics</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Pop up floor 3 Bookshelf-->
+    <div id="floor3Bookshelf" class="popup_overlay">
+      <div class="popup_main">
+        <h2>Bookshelves on third floor</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>This floor contains books with categories of economy, nursing and education</p>
         </div>
       </div>
     </div>
