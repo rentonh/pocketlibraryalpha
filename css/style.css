@@ -111,40 +111,6 @@
 }
 
 /* Pop up test */
-.mainframe-popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.mainframe-popup .mainframe-popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.mainframe-popup .mainframe-show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Pop up test 2 */
-/* pop up */
-
 .popup_overlay {
   position: fixed;
   top: 0;
@@ -163,11 +129,11 @@
 }
 
 .popup_main {
-  margin: 70px auto;
+  margin: 100px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 300px;
   position: relative;
   transition: all 5s ease-in-out;
 }
