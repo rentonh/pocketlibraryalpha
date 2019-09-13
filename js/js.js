@@ -97,5 +97,12 @@ function hideLeftArrow() {
   var hideArwL = document.getElementById("hideArwL")
   hideArwL.style.display = "none";
 }
+
+//popup test
+function popup() {
+  var pop = document.getElementById("poppop")
+  pop.classList.toggle("show");
+}
+
 // Set main image to home page
 showHome();
