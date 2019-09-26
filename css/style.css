@@ -1,10 +1,11 @@
 /*Main frame*/
-.mainframe{
-  width: 600px;
-  height: 800px;
+.mainframe {
+  max-width: 1080px;
+  max-height: 1440px;
+  width: 100%;
   margin: 0px auto;
-  background-color: lightyellow;
-  border: 2px solid darkblue;
+  /*background-color: lightyellow;*/
+  /*border: 2px solid darkblue;*/
   border-radius: 10px;
   /*background-image: url('../images/homeimg.png');*/
 }
@@ -17,7 +18,7 @@
   display: block;
   position: absolute;
   top: 10px;
-  z-index: 100;
+  z-index: 10;
   background: darkblue;
   border: 5px solid white;
   box-sizing: content-box;
@@ -79,30 +80,53 @@
 /* Perspective Arrow */
 .arrow {
   position: absolute;
-  top: 650px;
+  width: 100%;
+  top: 70%;
+  z-index: 10;
+}
+
+.mainframe-floorLevel {
+  position: absolute;
+  z-index: 9;
+  top:80%;
 }
 
 .arrow-leftArrow {
  display: none;
 }
+
 .arrow-rightArrow {
  display: none;
 }
-.floorLevel {
-  position: absolute;
-  top: 750px;
-}
+
 
 .floorLevel-homeImg {
   display: block;
   border-radius: 10px;
 }
 
+.floorLevel- {
+  width: 15%;
+
+}
+
+.floorArrow- {
+  width: 10%;
+}
+
 .mySlides {
   display:none;
 }
+
 .mainframe-mySlides {
   border-radius: 10px;
+  z-index: 5;
+}
+
+.mainframe img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Pop up test */
