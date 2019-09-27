@@ -2,7 +2,6 @@
 .mainframe {
   width: 400px;
   height: 700px;
-
   margin: 0px auto;
   /*background-color: lightyellow;*/
   /*border: 2px solid darkblue;*/
@@ -185,4 +184,15 @@
   .popup_main{
     width: 70%;
   }
+}
+
+/* iframe of study room*/
+.studyroomFrame {
+  border: 3px solid rgb(201,0,1);
+  overflow: hidden;
+}
+.studyroomFrameTable {
+  border: 0px none;
+  width: 100%;
+  min-height: 400px;
 }
