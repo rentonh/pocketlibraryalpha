@@ -79,7 +79,7 @@
 /* Perspective Arrow */
 .arrow {
   position: absolute;
-  width: 100%;
+  /*width: 100%;*/
   top: 70%;
   z-index: 10;
 }
