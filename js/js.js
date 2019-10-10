@@ -74,10 +74,10 @@ function hideLeftArrow() {
 showHome();
 
 //popup test
-function popup() {
+/*function popup() {
   var pop = document.getElementById("poppop")
   pop.classList.toggle("show");
-}
+}*/
 
 
 
