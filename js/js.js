@@ -123,10 +123,10 @@ $(document).ready(function(){
       useCSS: false,
       LoadAfterUI: true,
       onSliderLoad: function(currentIndex) {
-        $().filter('[data-picindex="'+(currentIndex+1)+'"]').addClass('active').siblings().removeClass('active');
+        $().filter('[data-picindex="'+(currentIndex+1)+'"]');
       },
       onSlideAfter: function($slideElement, oldIndex, newIndex) {
-        $().filter('[data-picindex="'+(newIndex+1)+'"]').addClass('active').siblings().removeClass('active');
+        $().filter('[data-picindex="'+(newIndex+1)+'"]');
       }
   });
 });
