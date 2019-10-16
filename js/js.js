@@ -55,6 +55,23 @@ function showFloor3() {
   showDivs(slideIndex = 5);
 }
 
+// evacuation plan switch on and off hover version
+/*function mouseOver() {
+    document.getElementById("floor1Img").src = "images/evac1L.png";
+}
+function mouseOut() {
+    document.getElementById("floor1Img").src = "images/LibFloor1L.png";
+}*/
+
+// evacuation plan switch on and off button version
+function evacswitchon() {
+    document.getElementById("floor1Img").src = "images/evac1L.png";
+}
+
+function evacswitchoff() {
+    document.getElementById("floor1Img").src = "images/LibFloor1L.png";
+}
+
 // Hide Arrow
 function hideRightArrow() {
   var hideArwR = document.getElementById("hideArwR")
