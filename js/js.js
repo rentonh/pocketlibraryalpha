@@ -14,6 +14,10 @@ function showHome() {
   var hideArwL = document.getElementById("hideArwL")
   hideArwL.style.display = "none";
   evacswitchoff()
+  document.getElementById("highlightHm").style.backgroundColor = "yellow";
+  document.getElementById("highlightF1").style.backgroundColor = "transparent";
+  document.getElementById("highlightF2").style.backgroundColor = "transparent";
+  document.getElementById("highlightF3").style.backgroundColor = "transparent";
 }
 
 // Go through all floors
@@ -37,23 +41,35 @@ function showDivs(n) {
   homeImg.style.display = "none";
 }
 
-// Highlight current floor
-
-
 // Show level1
 function showFloor1() {
   hideLeftArrow();
   showDivs(slideIndex = 7);
+  // Highlight current floor
+  document.getElementById("highlightHm").style.backgroundColor = "transparent";
+  document.getElementById("highlightF1").style.backgroundColor = "yellow";
+  document.getElementById("highlightF2").style.backgroundColor = "transparent";
+  document.getElementById("highlightF3").style.backgroundColor = "transparent";
 }
 // Show level2
 function showFloor2() {
   hideLeftArrow();
   showDivs(slideIndex = 3);
+  // Highlight current floor
+  document.getElementById("highlightHm").style.backgroundColor = "transparent";
+  document.getElementById("highlightF1").style.backgroundColor = "transparent";
+  document.getElementById("highlightF2").style.backgroundColor = "yellow";
+  document.getElementById("highlightF3").style.backgroundColor = "transparent";
 }
 // Show level3
 function showFloor3() {
   hideLeftArrow();
   showDivs(slideIndex = 5);
+  // Highlight current floor
+  document.getElementById("highlightHm").style.backgroundColor = "transparent";
+  document.getElementById("highlightF1").style.backgroundColor = "transparent";
+  document.getElementById("highlightF2").style.backgroundColor = "transparent";
+  document.getElementById("highlightF3").style.backgroundColor = "yellow";
 }
 
 // evacuation plan switch on and off hover version
