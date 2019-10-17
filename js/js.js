@@ -13,6 +13,7 @@ function showHome() {
   hideArwR.style.display = "none";
   var hideArwL = document.getElementById("hideArwL")
   hideArwL.style.display = "none";
+  evacswitchoff()
 }
 
 // Go through all floors
@@ -66,10 +67,28 @@ function mouseOut() {
 // evacuation plan switch on and off button version
 function evacswitchon() {
     document.getElementById("floor1Img").src = "images/evac1L.png";
+    document.getElementById("floor1ImgR").src = "images/evac1R.png";
+    document.getElementById("floor2Img").src = "images/evac2L.png";
+    document.getElementById("floor2ImgR").src = "images/evac2R.png";
+    document.getElementById("floor3Img").src = "images/evac3L.png";
+    document.getElementById("floor3ImgR").src = "images/evac3R.png";
+    var hideEvacOn = document.getElementById("hideEvacOn")
+    hideEvacOn.style.display = "none";
+    var hideEvacOff = document.getElementById("hideEvacOff")
+    hideEvacOff.style.display = "block";
 }
 
 function evacswitchoff() {
     document.getElementById("floor1Img").src = "images/LibFloor1L.png";
+    document.getElementById("floor1ImgR").src = "images/LibFloor1R.png";
+    document.getElementById("floor2Img").src = "images/LibFloor2L.png";
+    document.getElementById("floor2ImgR").src = "images/LibFloor2R.png";
+    document.getElementById("floor3Img").src = "images/LibFloor3L.png";
+    document.getElementById("floor3ImgR").src = "images/LibFloor3R.png";
+    var hideEvacOn = document.getElementById("hideEvacOn")
+    hideEvacOn.style.display = "block";
+    var hideEvacOff = document.getElementById("hideEvacOff")
+    hideEvacOff.style.display = "none";
 }
 
 // Hide Arrow
