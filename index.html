@@ -6,8 +6,6 @@
     <script src="https://bxslider.com/lib/jquery.bxslider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css'>
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pocket Library MVP">
   </head>
@@ -16,8 +14,8 @@
     <div class="mainframe">
       <!--Main area where stores floor plans and home image-->
       <img id="HomeImg" class="floorLevel-homeImg" src="images/homeimg.png">
-      <img id="floor1Img" class="mainframe-mySlides" src="images/LibFloor1L.png">
-      <img id="floor1ImgR" class="mainframe-mySlides" src="images/LibFloor1R.png">
+      <img id="floor1Img" class="mainframe-mySlides" src="images/LibFloor1L.png" usemap="#floor1West">
+      <img id="floor1ImgR" class="mainframe-mySlides" src="images/LibFloor1R.png" usemap="#floor1North">
       <img id="floor2Img" class="mainframe-mySlides" src="images/LibFloor2L.png" usemap="#floor2West">
       <img id="floor2ImgR" class="mainframe-mySlides" src="images/LibFloor2R.png" usemap="#floor2North">
       <img id="floor3Img" class="mainframe-mySlides" src="images/LibFloor3L.png" usemap="#floor3West">
@@ -56,24 +54,213 @@
     </div>
 
     <!--Pop up mapping-->
+    <map class="" name="floor1West">
+      <area class="popupbutton" shape="circle" coords="250,275,11" href="#infoPopup_inforDesk">
+      <area class="popupbutton" shape="circle" coords="130,173,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="108,208,13" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="179,188,11" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="225,218,12" href="#infoPopup_printRoom">
+      <area class="popupbutton" shape="circle" coords="234,303,12" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="177,325,12" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="146,258,12" href="#infoPopup_entrance">
+      <area class="popupbutton" shape="circle" coords="311,298,12" href="#infoPopup_entrance">
+      <area class="popupbutton" shape="circle" coords="141,203,7" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="156,194,6" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="185,209,7" href="#infoPopup_femaleToilet">
+    </map>
+    <map class="" name="floor1North">
+      <area class="popupbutton" shape="circle" coords="202,268,12" href="#infoPopup_inforDesk">
+      <area class="popupbutton" shape="circle" coords="12,344,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="74,361,12" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="87,287,12" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="149,263,12" href="#infoPopup_printRoom">
+      <area class="popupbutton" shape="circle" coords="270,260,13" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="278,315,13" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="210,314,12" href="#infoPopup_entrance">
+      <area class="popupbutton" shape="circle" coords="257,228,12" href="#infoPopup_entrance">
+      <area class="popupbutton" shape="circle" coords="74,330,8" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="63,317,7" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="114,290,8" href="#infoPopup_femaleToilet">
+    </map>
     <map class="" name="floor2West">
       <area class="popupbutton" shape="poly" coords="203,233,228,220,241,225,214,239" href="#StudyRoom">
       <area class="popupbutton" shape="circle" coords="161,336,18" href="#floor2Bookshelf">
+      <area class="popupbutton" shape="circle" coords="128,176,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="102,189,12" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="172,187,12" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="238,255,12" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="149,181,8" href="#infoPopup_accessibleToilet">
+      <area class="popupbutton" shape="circle" coords="170,224,7" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="151,197,7" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="179,210,7" href="#infoPopup_femaleToilet">
     </map>
     <map class="" name="floor2North">
       <area class="popupbutton" shape="poly" coords="132,270,146,264,168,278,155,285" href="#StudyRoom">
       <area class="popupbutton" shape="circle" coords="275,321,17" href="#floor2Bookshelf">
+      <area class="popupbutton" shape="circle" coords="12,331,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="88,348,12" href="#infoPopup_libbraryPC">
+      <area class="popupbutton" shape="circle" coords="81,292,12" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="195,265,12" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="33,328,7" href="#infoPopup_accessibleToilet">
+      <area class="popupbutton" shape="circle" coords="123,309,8" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="61,321,7" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="109,298,8" href="#infoPopup_femaleToilet">
     </map>
     <map class="" name="floor3West">
       <area class="popupbutton" shape="poly" coords="283,280,300,288,259,320,234,304,250,293,258,298" href="#StudyRoom">
       <area class="popupbutton" shape="circle" coords="93,232,16" href="#floor3LawBookshelf">
       <area class="popupbutton" shape="circle" coords="117,319,18" href="#floor3Bookshelf">
+      <area class="popupbutton" shape="circle" coords="95,190,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="133,195,12" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="131,247,12" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="126,227,7" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="114,205,8" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="136,215,7" href="#infoPopup_femaleToilet">
     </map>
     <map class="" name="floor3North">
       <area class="popupbutton" shape="poly" coords="259,202,306,222,290,231,272,224,277,221,248,208" href="#StudyRoom">
       <area class="popupbutton" shape="circle" coords="115,337,16" href="#floor3LawBookshelf">
       <area class="popupbutton" shape="circle" coords="260,313,18" href="#floor3Bookshelf">
+      <area class="popupbutton" shape="circle" coords="15,327,12" href="#infoPopup_elevator">
+      <area class="popupbutton" shape="circle" coords="81,286,12" href="#infoPopup_stairs">
+      <area class="popupbutton" shape="circle" coords="193,288,12" href="#infoPopup_cataloguePCs">
+      <area class="popupbutton" shape="circle" coords="125,304,7" href="#infoPopup_waterFountain">
+      <area class="popupbutton" shape="circle" coords="64,317,7" href="#infoPopup_maleToilet">
+      <area class="popupbutton" shape="circle" coords="111,293,7" href="#infoPopup_femaleToilet">
     </map>
+
+    <!--Pop up information-->
+    <div id="infoPopup_inforDesk" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Information Desk</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Information Desk</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_elevator" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Elevator</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Elevator to all three levels, please do not use while evacuating.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_libbraryPC" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Computers</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Computers</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_stairs" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Stairs</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Stairs to all three levels</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_stairs" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Stairs</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Stairs to all three levels</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_printRoom" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Print Room</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Print Room</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_cataloguePCs" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary catalogue PCs</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary catalogue PCs</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_entrance" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Entrance/Exit</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Entrance/Exit</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_waterFountain" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Water Fountain</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Provides cold and hot water. please do not wash hands here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_maleToilet" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Male Toilet</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Male Toilet</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_femaleToilet" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Female Toilet</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Female Toilet</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infoPopup_accessibleToilet" class="popup_overlay">
+      <a class="popup_out_close" href="#"></a>
+      <div class="popup_main">
+        <h2>Libbrary Accessible Toilet</h2>
+        <a class="popup_close" href="#">&times;</a>
+        <div class="popup_content">
+          <p>Libbrary Accessible Toilet</p>
+        </div>
+      </div>
+    </div>
 
     <!--Pop up study room-->
     <div id="StudyRoom" class="popup_overlay">
