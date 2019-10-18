@@ -92,6 +92,7 @@ function evacswitchon() {
     hideEvacOn.style.display = "none";
     var hideEvacOff = document.getElementById("hideEvacOff")
     hideEvacOff.style.display = "block";
+    disableUsemap();
 }
 
 function evacswitchoff() {
@@ -105,6 +106,7 @@ function evacswitchoff() {
     hideEvacOn.style.display = "block";
     var hideEvacOff = document.getElementById("hideEvacOff")
     hideEvacOff.style.display = "none";
+    enableUsemap();
 }
 
 // Hide Arrow
@@ -162,6 +164,24 @@ function openMenu() {
   }
 }
 
+//disable usemap while evacuation mode is on
+function disableUsemap() {
+  document.getElementById("floor1Img").useMap = "#";
+  document.getElementById("floor1ImgR").useMap = "#";
+  document.getElementById("floor2Img").useMap = "#";
+  document.getElementById("floor2ImgR").useMap = "#";
+  document.getElementById("floor3Img").useMap = "#";
+  document.getElementById("floor3ImgR").useMap = "#";
+}
+
+function enableUsemap() {
+  document.getElementById("floor1Img").useMap = "#floor1West";
+  document.getElementById("floor1ImgR").useMap = "#floor1North";
+  document.getElementById("floor2Img").useMap = "#floor2West";
+  document.getElementById("floor2ImgR").useMap = "#floor2North";
+  document.getElementById("floor3Img").useMap = "#floor3West";
+  document.getElementById("floor3ImgR").useMap = "#floor3North";
+}
 
 
 //carousel Bookshelf
